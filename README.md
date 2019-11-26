@@ -12,7 +12,8 @@ Sentiment Analysis - Movie Reviews from IMDB Dataset - LSTM &amp; CNN
 
 ## Analytic Process Framework
 ### 1. Data Exploration: 
-Check the number of records and the length of reviews for each category
+ - Check the number of records and the length of reviews for each category
+ - Use seaborn to visualise data
 
 ### 2. Feture Engineering - Data Cleaning: 
 - remove HTML line break tag: <br />
@@ -20,14 +21,14 @@ Check the number of records and the length of reviews for each category
 - lemmatization
 - tokenizer-encode text as a sequence of word indexes
 - *Didn't remove stopwords: to avoid the meaning of sentence changes (e.g. I didn't like it -> I like it -> positive?)
+- pad_sequences 
 
-### 3. Prepare data for Models:
-pad_sequences 
-
-### 4. Modelling:
+### 3. Modelling:
 - LSTM Model
 - CNN Model
 
 
+
 ## Environment
-Language : Python 3
+- Language : Python 3
+- Libraries: Pandas, seaborn, keras, nltk
